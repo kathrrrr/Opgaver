@@ -12,36 +12,35 @@ def sum(n):
         return n + sum(n-1)
     
 ```
-2. Skriv en rekursiv funktion, der beregner eksponenten af et ta.
+2. Skriv en rekursiv funktion, der beregner eksponenten af et tal.
 3. Skriv en funktion der rekursivt skifter mellem at addere og subtrahere tal i en liste. Hvis listen eksempelvis er [5,3,1,2,4] så skal funktionen udregne: 5-3+1-2+4=5.
-4. Skriv en rekursiv funktion, der tegner et kvadrat inde i et kvadrat inde i kvadrat indtil den når en vis dybde.
-5. Skriv en rekursiv funktion der undersøger om et tal er lige eller ulige
-6. Hvad gør følgende funktion. Forklar koden i detaljer:
-```javascript
-function recBinSearch(n, arr) {
-  let mid = Math.floor(arr.length / 2);
-  if (arr.length === 1 && arr[0] != n) {
-    return false;
-  }
-  if (n === arr[mid]) {
-    return true;
-  } else if (n < arr[mid]) {
-    return recBinSearch(n, arr.slice(0, mid));
-  } else if (n > arr[mid]) {
-    return recBinSearch(n, arr.slice(mid));
-  }
-}
+4. Skriv en rekursiv funktion der undersøger om et tal er lige eller ulige
+5. Hvad gør følgende funktion. Forklar koden i detaljer:
+```python
+import math
+
+def binSearch(n, arr) :
+    mid = math.floor(len(arr) / 2);
+    if len(arr) == 1 and arr[0] != n : 
+        return False
+  
+    if n == arr[mid] :
+        return True
+    elif n < arr[mid] :
+        return binSearch(n, arr[0: mid])
+    elif n > arr[mid] :
+        return binSearch(n, arr[mid:len(arr)-1])
+
 ```
-7. Skriv en rekursiv funktion, der undersøger om et ord er et palindrome. Dvs. hvorvidt det læses forfra og bagfra på samme måde. 
-8. Skriv en rekursiv funktion der tegner en vandret linje, og nedenunder tegner samme vandrette linje, men hvor den miderste tredjedel er væk, fortsæt med at fjerne den miderste tredjedel indtil du har tegnet de første 15 linjer.
-9. Skriv en rekursiv funktion, der finder største fælles divisor af to tal
-10. Skriv en rekursiv funktion, der returnerer alle tænkelige permutationer af et ord (eksempel: ”abc” så er ”acb” en permutation.
-11. Skriv en rekursiv funktion, der beregner mindste fælles divisor
-12. Skriv en rekursiv funktion der afgør om et naturligt tal er et primtal eller ej. 
-13.  Skriv en rekursiv funktion, der konstruerer og visualiserer Pascals Trekant.	
-14. Skriv en rekursiv funktion, der finder det største tal i en liste
-15. Skriv en rekursiv funktion, der beregner Tribonacci rækkefølgen  (starter med 0,0,1)
-16. Udvid koden for fraktaltræer, så der dannes grønne blade for enden af grenene.
+6. Skriv en rekursiv funktion, der undersøger om et ord er et palindrome. Dvs. hvorvidt det læses forfra og bagfra på samme måde. 
+7. Skriv en rekursiv funktion, der finder største fælles divisor af to tal
+8. Skriv en rekursiv funktion, der returnerer alle tænkelige permutationer af et ord (eksempel: ”abc” så er ”acb” en permutation.
+9. Skriv en rekursiv funktion, der beregner mindste fælles divisor
+10. Skriv en rekursiv funktion der afgør om et naturligt tal er et primtal eller ej. 
+11.  Skriv en rekursiv funktion, der konstruerer Pascals Trekant.	
+12. Skriv en rekursiv funktion, der finder det største tal i en liste
+13. Skriv en rekursiv funktion, der beregner Tribonacci rækkefølgen  (starter med 0,0,1)
+
 
 
 ## Projekt: Selv-similære figurer
