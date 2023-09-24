@@ -1,15 +1,16 @@
 
 ## Øvelser
+Øvelserne er taget fra Henrik Sterners p5js opgaver og ændret til python
 Herunder en række øvelser. Som minimum bør man lave 1. til og med 8. Gerne lav et af projekterne. 
 
 1. Forklar hvad funktionen gør og udskriv kaldene for sum(5):
-```javascript
-function sum(n) {
-  if (n == 0 || n == 1)
-    return 1;
-  if (n > 0)
-    return n + sum(n ‐ 1);
-}
+```python
+def sum(n):
+    if n == 0 or n == 1 :
+        return 1
+    if n > 1 :
+        return n + sum(n-1)
+    
 ```
 2. Skriv en rekursiv funktion, der beregner eksponenten af et ta.
 3. Skriv en funktion der rekursivt skifter mellem at addere og subtrahere tal i en liste. Hvis listen eksempelvis er [5,3,1,2,4] så skal funktionen udregne: 5-3+1-2+4=5.
