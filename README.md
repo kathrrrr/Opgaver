@@ -20,7 +20,7 @@ def sum(n):
 import math
 
 def binSearch(n, arr) :
-    mid = math.floor(len(arr) / 2);
+    mid = math.floor(len(arr) / 2)
     if len(arr) == 1 and arr[0] != n : 
         return False
   
